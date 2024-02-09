@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>赤色の背景ページ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Image</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>背景でも</h1>
-    <p>このページの背景色はCSSで赤色に設定されています。JavaScriptを使用してメッセージを表示します。</p>
+    <div id="area1" class="drop-area">
+        <img src="https://www.pokemon-card.com/assets/images/card_images/large/SV5K/045147_P_ROZERIA.jpg" id="draggable-image" draggable="true" width="100">
+    </div>
+    <div id="area2" class="drop-area"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
